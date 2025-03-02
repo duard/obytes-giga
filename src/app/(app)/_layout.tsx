@@ -1,9 +1,10 @@
 /* eslint-disable max-lines-per-function */
 /* eslint-disable react/no-unstable-nested-components */
+import { Ionicons } from '@expo/vector-icons';
 import { Link, Redirect, SplashScreen, Tabs } from 'expo-router';
 import React, { useCallback, useEffect } from 'react';
 
-import { Pressable, Text } from '@/components/ui';
+import { Pressable, Text, TouchableOpacity, View } from '@/components/ui';
 import {
   Feed as FeedIcon,
   Settings as SettingsIcon,
@@ -58,10 +59,50 @@ export default function TabLayout() {
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Home',
+          title: '',
           tabBarIcon: ({ color }) => <FeedIcon color={color} />,
-          headerRight: () => <CreateNewPostLink />,
+          // headerRight: () => <CreateNewPostLink />,
           tabBarButtonTestID: 'feed-tab',
+          headerLeft: () => (
+            <View className="flex flex-row items-center justify-between">
+              <View className="px-4">
+                <View className="flex-row items-center gap-2">
+                  {/* <TouchableOpacity>
+                    <MaterialIcons name="menu-open" size={28} color="white" />
+                  </TouchableOpacity> */}
+                  <Text className="text-2xl font-bold text-white">
+                    Gigantão
+                  </Text>
+                </View>
+              </View>
+            </View>
+          ),
+          headerRight: () => (
+            <View className="px-4">
+              <View className="flex w-full flex-row items-center gap-4">
+                <TouchableOpacity>
+                  <View className="relative">
+                    <View className="absolute -right-2 -top-2 z-10 size-5 flex-col items-center justify-center rounded-full bg-red-500">
+                      <Text className="text-sm font-bold text-white">10</Text>
+                    </View>
+                    <Ionicons
+                      name="notifications-outline"
+                      size={24}
+                      color="white"
+                    />
+                  </View>
+                </TouchableOpacity>
+                <TouchableOpacity>
+                  <View className="relative">
+                    <View className="absolute -right-2 -top-2  z-10 size-5 flex-col items-center justify-center rounded-full bg-red-500">
+                      <Text className="text-sm font-bold text-white">1</Text>
+                    </View>
+                    <Ionicons name="cart-outline" size={24} color="white" />
+                  </View>
+                </TouchableOpacity>
+              </View>
+            </View>
+          ),
         }}
       />
 
