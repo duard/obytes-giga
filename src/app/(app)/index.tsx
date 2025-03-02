@@ -1,11 +1,9 @@
 /* eslint-disable max-lines-per-function */
 import { Entypo, FontAwesome5 } from '@expo/vector-icons';
-import { Link } from 'expo-router';
 import React from 'react';
 
 import {
   FocusAwareStatusBar,
-  Pressable,
   Text,
   TouchableOpacity,
   View,
@@ -16,13 +14,7 @@ export default function IndexScreen() {
     <View className="flex-1 ">
       <FocusAwareStatusBar />
       {/* make an butto link  */}
-      <Link href="/feed">View Feed</Link>
-      <Link href="/user">View user</Link>
-      <Link href="/user" asChild>
-        <Pressable>
-          <Text className="px-3 text-primary-300">Inícios</Text>
-        </Pressable>
-      </Link>
+
       {/* <FlashList
         data={data}
         renderItem={renderItem}
@@ -34,12 +26,8 @@ export default function IndexScreen() {
       {/* categories */}
       <View className="mt-5 w-full px-5">
         <View className="w-full flex-row items-center justify-between">
-          <Text
-            className="flex-1 py-2 uppercase"
-            style={{ fontFamily: 'HelvetIns' }}
-          >
-            Danh mục dịch vụ
-          </Text>
+          <Text className="flex-1 py-2 font-extrabold uppercase">Módulos</Text>
+
           <TouchableOpacity>
             <View className="flex-row items-center justify-between">
               <Text className="text-sm text-gray-500"></Text>
