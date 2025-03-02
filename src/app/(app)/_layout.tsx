@@ -105,7 +105,24 @@ export default function TabLayout() {
           ),
         }}
       />
-
+      <Tabs.Screen
+        name="vehicles"
+        options={{
+          title: 'Veículos',
+          headerShown: true,
+          tabBarIcon: ({ color }) => <SettingsIcon color={color} />,
+          tabBarButtonTestID: 'vehicles-tab',
+        }}
+      />
+      <Tabs.Screen
+        name="users"
+        options={{
+          title: 'Usuários',
+          headerShown: true,
+          tabBarIcon: ({ color }) => <SettingsIcon color={color} />,
+          tabBarButtonTestID: 'users-tab',
+        }}
+      />
       <Tabs.Screen
         name="style"
         options={{

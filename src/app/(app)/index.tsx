@@ -53,19 +53,14 @@ export default function IndexScreen() {
                     className="py-2 text-center text-sm"
                     style={{ fontFamily: 'Montserrat' }}
                   >
-                    Bảo dưỡng định kỳ{' '}
+                    Manutenção{' '}
                   </Text>
                 </View>
               </TouchableOpacity>
               <TouchableOpacity className="h-[110px] w-1/3 flex-col items-center justify-center p-1">
                 <View className="size-full flex-col items-center justify-center rounded-md bg-green-100 p-2 py-5">
                   <FontAwesome5 name="cogs" size={24} color="green" />
-                  <Text
-                    className="py-2 text-center text-sm"
-                    style={{ fontFamily: 'Montserrat' }}
-                  >
-                    Sửa chữa động cơ{' '}
-                  </Text>
+                  <Text className="py-2 text-center text-sm">Compras </Text>
                 </View>
               </TouchableOpacity>
               <TouchableOpacity className="h-[110px] w-1/3 flex-col items-center justify-center p-1">
@@ -75,7 +70,7 @@ export default function IndexScreen() {
                     className="py-2 text-center text-sm"
                     style={{ fontFamily: 'Montserrat' }}
                   >
-                    Sửa chữa hộp số
+                    Funilaria
                   </Text>
                 </View>
               </TouchableOpacity>
@@ -86,7 +81,7 @@ export default function IndexScreen() {
                     className="py-2 text-center text-sm"
                     style={{ fontFamily: 'Montserrat' }}
                   >
-                    Kiểm tra và thay dầu nhớt
+                    Hidráulica
                   </Text>
                 </View>
               </TouchableOpacity>
@@ -97,7 +92,7 @@ export default function IndexScreen() {
                     className="py-2 text-center text-sm"
                     style={{ fontFamily: 'Montserrat' }}
                   >
-                    Cân chỉnh bánh xe
+                    Requisioções
                   </Text>
                 </View>
               </TouchableOpacity>
@@ -108,7 +103,7 @@ export default function IndexScreen() {
                     className="py-2 text-center text-sm"
                     style={{ fontFamily: 'Montserrat' }}
                   >
-                    Thay lốp & vá lốp
+                    Táxi
                   </Text>
                 </View>
               </TouchableOpacity>
