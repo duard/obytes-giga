@@ -5,8 +5,9 @@ import {
   FontAwesome5,
   MaterialIcons,
 } from '@expo/vector-icons';
+import { Link } from 'expo-router';
 import React from 'react';
-import { Image, ScrollView } from 'react-native';
+import { Image, Pressable, ScrollView } from 'react-native';
 
 import {
   FocusAwareStatusBar,
@@ -92,7 +93,7 @@ export default function IndexScreen() {
                     className="py-2 text-center text-sm"
                     style={{ fontFamily: 'Montserrat' }}
                   >
-                    Requisioções
+                    Requisições
                   </Text>
                 </View>
               </TouchableOpacity>
@@ -111,6 +112,153 @@ export default function IndexScreen() {
           </View>
 
           {/* products */}
+          <View className="w-full p-5">
+            <View className="w-full flex-row items-center justify-between">
+              <View className="flex-row items-center gap-2">
+                <MaterialIcons name="emoji-events" size={24} color="gold" />
+                <Text
+                  className="py-2 uppercase"
+                  style={{ fontFamily: 'HelvetIns' }}
+                >
+                  Goiabada sistematica
+                </Text>
+              </View>
+              <TouchableOpacity>
+                <View className="flex-row items-center justify-between">
+                  <Text className="text-sm text-gray-500"></Text>
+                  <Entypo name="chevron-small-right" size={24} color="black" />
+                </View>
+              </TouchableOpacity>
+            </View>
+
+            <View className="mt-4 w-full">
+              <ScrollView
+                className="w-full"
+                horizontal={true}
+                showsHorizontalScrollIndicator={false}
+              >
+                <View className="flex-row gap-5">
+                  <TouchableOpacity className="h-[250px] w-[200px]">
+                    <View className="size-full rounded-md border border-gray-200/100 bg-white">
+                      <View className="relative w-full rounded-md">
+                        <TouchableOpacity className="absolute right-2 top-2 z-10 size-6 flex-col items-center justify-center rounded-full bg-gray-100">
+                          <MaterialIcons
+                            name="favorite"
+                            size={15}
+                            color="black"
+                          />
+                        </TouchableOpacity>
+                        <Image
+                          source={require('../../../assets/images/th.jpg')}
+                          className="h-[120] w-full rounded-md"
+                          resizeMode="cover"
+                        />
+                      </View>
+                      <View className="mt-2 w-full px-3 pb-4">
+                        <Text className="w-full text-xl font-bold">
+                          VinFast VF3
+                        </Text>
+                        <Text className="pt-2 text-sm text-gray-700">
+                          Mẫu xe điện cỡ nhỏ của VinFast, giá bán từ 240 triệu
+                          đồng
+                        </Text>
+                        <View className="mt-2 w-full flex-row items-center gap-2">
+                          <Text>5.0</Text>
+                          <View className="flex-row items-center">
+                            <Entypo name="star" size={15} color="orange" />
+                            <Entypo name="star" size={15} color="orange" />
+                            <Entypo name="star" size={15} color="orange" />
+                            <Entypo name="star" size={15} color="orange" />
+                            <Entypo name="star" size={15} color="orange" />
+                          </View>
+                        </View>
+                      </View>
+                    </View>
+                  </TouchableOpacity>
+                  <TouchableOpacity className="h-[250px] w-[200px]">
+                    <View className="size-full rounded-md border border-gray-200/100 bg-white">
+                      <View className="relative w-full rounded-md">
+                        <TouchableOpacity className="absolute right-2 top-2 z-10 size-6 flex-col items-center justify-center rounded-full bg-gray-100">
+                          <MaterialIcons
+                            name="favorite"
+                            size={15}
+                            color="black"
+                          />
+                        </TouchableOpacity>
+                        <Image
+                          source={require('../../../assets/images/th2.jpg')}
+                          className="h-[120] w-full rounded-md"
+                          resizeMode="cover"
+                        />
+                      </View>
+                      <View className="mt-2 w-full px-3 pb-4">
+                        <Text className="w-full text-xl font-bold">
+                          VinFast VF5
+                        </Text>
+                        <Text className="pt-2 text-sm text-gray-700">
+                          SUV điện cỡ nhỏ với giá bán từ 479 triệu đồng.
+                        </Text>
+                        <View className="mt-2 w-full flex-row items-center gap-2">
+                          <Text>5.0</Text>
+                          <View className="flex-row items-center">
+                            <Entypo name="star" size={15} color="orange" />
+                            <Entypo name="star" size={15} color="orange" />
+                            <Entypo name="star" size={15} color="orange" />
+                            <Entypo name="star" size={15} color="orange" />
+                            <Entypo name="star" size={15} color="orange" />
+                          </View>
+                        </View>
+                      </View>
+                    </View>
+                  </TouchableOpacity>
+                  <TouchableOpacity className="h-[250px] w-[200px]">
+                    <View className="size-full rounded-md border border-gray-200/100 bg-white">
+                      <View className="relative w-full rounded-md">
+                        <TouchableOpacity className="absolute right-2 top-2 z-10 size-6 flex-col items-center justify-center rounded-full bg-gray-100">
+                          <MaterialIcons
+                            name="favorite"
+                            size={15}
+                            color="black"
+                          />
+                        </TouchableOpacity>
+                        <Image
+                          source={require('../../../assets/images/th3.jpg')}
+                          className="h-[120] w-full rounded-md"
+                          resizeMode="cover"
+                        />
+                      </View>
+                      <View className="mt-2 w-full px-3 pb-4">
+                        <Text className="w-full text-xl font-bold">
+                          Ford Ranger
+                        </Text>
+                        <Text className="pt-2 text-sm text-gray-700">
+                          Bán tải cỡ trung, giá từ 669 triệu đồng
+                        </Text>
+                        <View className="mt-2 w-full flex-row items-center gap-2">
+                          <Text>5.0</Text>
+                          <View className="flex-row items-center">
+                            <Entypo name="star" size={15} color="orange" />
+                            <Entypo name="star" size={15} color="orange" />
+                            <Entypo name="star" size={15} color="orange" />
+                            <Entypo name="star" size={15} color="orange" />
+                            <Entypo name="star" size={15} color="orange" />
+                          </View>
+                        </View>
+                      </View>
+                    </View>
+                  </TouchableOpacity>
+                </View>
+              </ScrollView>
+            </View>
+          </View>
+          <View className="mb-8 w-full px-5">
+            <Link href="/user">View user</Link>
+            <Link href="/vehicles" asChild>
+              <Pressable>
+                <Text>Veículos</Text>
+              </Pressable>
+            </Link>
+          </View>
 
           {/* sản phẩm nổi bật */}
           <View className="w-full p-5">
