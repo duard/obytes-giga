@@ -29,7 +29,7 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
   slug: 'obytesapp',
   version: Env.VERSION.toString(),
   orientation: 'portrait',
-  icon: './assets/icon.png',
+  icon: './assets/images/gigantao/icon.png',
   userInterfaceStyle: 'automatic',
   newArchEnabled: true,
   updates: {
@@ -46,24 +46,30 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
   experiments: {
     typedRoutes: true,
   },
+  splash: {
+    image: './assets/images/gigantao/splashgg.png',
+    resizeMode: 'cover',
+    backgroundColor: '#034725',
+  },
   android: {
     adaptiveIcon: {
-      foregroundImage: './assets/adaptive-icon.png',
-      backgroundColor: '#2E3C4B',
+      foregroundImage: './assets/images/gigantao/icon.png',
+      backgroundColor: '#034725',
     },
     package: Env.PACKAGE,
   },
   web: {
-    favicon: './assets/favicon.png',
+    favicon: './assets/images/gigantao/favicon-gg.png',
     bundler: 'metro',
   },
+
   plugins: [
     [
       'expo-splash-screen',
       {
-        backgroundColor: '#2E3C4B',
-        image: './assets/splash-icon.png',
-        imageWidth: 150,
+        backgroundColor: '#034725',
+        image: './assets/images/gigantao/favicon-gg.png',
+        imageWidth: 210,
       },
     ],
     [
@@ -76,6 +82,23 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
     'expo-router',
     ['app-icon-badge', appIconBadgeConfig],
     ['react-native-edge-to-edge'],
+    [
+      'expo-asset',
+      {
+        assets: [
+          './assets/images/gigantao/splashgg.png',
+          './assets/images/gigantao/icon.png',
+        ],
+      },
+    ],
+    [
+      'expo-camera',
+      {
+        cameraPermission: 'Allow $(PRODUCT_NAME) to access your camera',
+        microphonePermission: 'Allow $(PRODUCT_NAME) to access your microphone',
+        recordAudioAndroid: true,
+      },
+    ],
   ],
   extra: {
     ...ClientEnv,
