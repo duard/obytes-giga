@@ -62,7 +62,7 @@ export default function TabLayout() {
           title: '',
           tabBarIcon: ({ color }) => <FeedIcon color={color} />,
           // headerRight: () => <CreateNewPostLink />,
-          tabBarButtonTestID: 'feed-tab',
+          // tabBarButtonTestID: 'feed-tab',
           headerLeft: () => (
             <View className="flex flex-row items-center justify-between">
               <View className="px-4">
@@ -135,8 +135,9 @@ export default function TabLayout() {
       <Tabs.Screen
         name="settings"
         options={{
+          headerShown: true,
           title: 'Settings',
-          headerShown: false,
+
           tabBarIcon: ({ color }) => <SettingsIcon color={color} />,
           tabBarButtonTestID: 'settings-tab',
         }}
