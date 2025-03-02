@@ -1,3 +1,4 @@
+/* eslint-disable max-lines-per-function */
 /* eslint-disable react/no-unstable-nested-components */
 import { Link, Redirect, SplashScreen, Tabs } from 'expo-router';
 import React, { useCallback, useEffect } from 'react';
@@ -33,6 +34,23 @@ export default function TabLayout() {
   return (
     <Tabs
       screenOptions={{
+        tabBarShowLabel: false,
+        // title: '',
+        tabBarActiveTintColor: '#16A34A',
+        // tabBarInactiveTintColor: '#fff',
+
+        headerStyle: {
+          backgroundColor: '#16A34A',
+        },
+        // headerShadowVisible: false,
+        // headerTintColor: '#fff',
+        // tabBarStyle: {
+        //   // backgroundColor: '#027DFC',
+        // },
+        // tabBarIconStyle: {
+        //   width: 30,
+        //   height: 30,
+        // },
         // tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
         headerShown: true,
       }}

@@ -12,7 +12,7 @@ export default function IndexScreen() {
       <Link href="/user">View user</Link>
       <Link href="/user" asChild>
         <Pressable>
-          <Text>Inícios</Text>
+          <Text className="px-3 text-primary-300">Inícios</Text>
         </Pressable>
       </Link>
       {/* <FlashList
