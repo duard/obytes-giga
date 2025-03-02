@@ -77,6 +77,9 @@ importers:
       expo-localization:
         specifier: ~16.0.1
         version: 16.0.1(expo@52.0.35(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@expo/metro-runtime@4.0.1(react-native@0.76.7(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1)))(encoding@0.1.13)(react-native-webview@13.12.5(react-native@0.76.7(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(react@18.3.1))(react-native@0.76.7(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(react@18.3.1))(react@18.3.1)
+      expo-media-library:
+        specifier: ~17.0.6
+        version: 17.0.6(expo@52.0.35(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@expo/metro-runtime@4.0.1(react-native@0.76.7(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1)))(encoding@0.1.13)(react-native-webview@13.12.5(react-native@0.76.7(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(react@18.3.1))(react-native@0.76.7(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(react@18.3.1))(react-native@0.76.7(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))
       expo-router:
         specifier: ~4.0.17
         version: 4.0.17(a4geajmgoqbyyi3rknv2b47nyy)
@@ -158,6 +161,9 @@ importers:
       react-native-svg:
         specifier: ~15.8.0
         version: 15.8.0(react-native@0.76.7(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(react@18.3.1)
+      react-native-vision-camera:
+        specifier: ^4.6.4
+        version: 4.6.4(react-native-reanimated@3.16.1(@babel/core@7.26.0)(react-native@0.76.7(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(react@18.3.1))(react-native@0.76.7(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(react@18.3.1)
       react-native-web:
         specifier: ~0.19.13
         version: 0.19.13(encoding@0.1.13)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -3665,6 +3671,12 @@ packages:
     peerDependencies:
       expo: '*'
 
+  expo-media-library@17.0.6:
+    resolution: {integrity: sha512-LUnfrddmee1xLOkyG2NN1l9xQbtvMX3fbM1brEGHg0SKSndvjod3FQdhTzZEYAariqW2RSxQR8v1IsheIoLQXg==}
+    peerDependencies:
+      expo: '*'
+      react-native: '*'
+
   expo-modules-autolinking@2.0.7:
     resolution: {integrity: sha512-rkGc6a/90AC3q8wSy4V+iIpq6Fd0KXmQICKrvfmSWwrMgJmLfwP4QTrvLYPYOOMjFwNJcTaohcH8vzW/wYKrMg==}
     hasBin: true
@@ -6127,6 +6139,22 @@ packages:
     peerDependencies:
       react: '*'
       react-native: '*'
+
+  react-native-vision-camera@4.6.4:
+    resolution: {integrity: sha512-d998uTHsGJ9bTlsClgT37RK1sK7ZQekv5y6ylynds3vmdK6YbFQJUoi2cvMrFN4dp9qvSlCjEfwekjMIz3guQA==}
+    peerDependencies:
+      '@shopify/react-native-skia': '*'
+      react: '*'
+      react-native: '*'
+      react-native-reanimated: '*'
+      react-native-worklets-core: '*'
+    peerDependenciesMeta:
+      '@shopify/react-native-skia':
+        optional: true
+      react-native-reanimated:
+        optional: true
+      react-native-worklets-core:
+        optional: true
 
   react-native-web@0.19.13:
     resolution: {integrity: sha512-etv3bN8rJglrRCp/uL4p7l8QvUNUC++QwDbdZ8CB7BvZiMvsxfFIRM1j04vxNldG3uo2puRd6OSWR3ibtmc29A==}
@@ -12051,6 +12079,11 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  expo-media-library@17.0.6(expo@52.0.35(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@expo/metro-runtime@4.0.1(react-native@0.76.7(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1)))(encoding@0.1.13)(react-native-webview@13.12.5(react-native@0.76.7(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(react@18.3.1))(react-native@0.76.7(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(react@18.3.1))(react-native@0.76.7(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1)):
+    dependencies:
+      expo: 52.0.35(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@expo/metro-runtime@4.0.1(react-native@0.76.7(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1)))(encoding@0.1.13)(react-native-webview@13.12.5(react-native@0.76.7(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(react@18.3.1))(react-native@0.76.7(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(react@18.3.1)
+      react-native: 0.76.7(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1)
+
   expo-modules-autolinking@2.0.7:
     dependencies:
       '@expo/spawn-async': 1.7.2
@@ -14975,6 +15008,13 @@ snapshots:
       react: 18.3.1
       react-native: 0.76.7(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1)
       warn-once: 0.1.1
+
+  react-native-vision-camera@4.6.4(react-native-reanimated@3.16.1(@babel/core@7.26.0)(react-native@0.76.7(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(react@18.3.1))(react-native@0.76.7(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(react@18.3.1):
+    dependencies:
+      react: 18.3.1
+      react-native: 0.76.7(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1)
+    optionalDependencies:
+      react-native-reanimated: 3.16.1(@babel/core@7.26.0)(react-native@0.76.7(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(react@18.3.1)
 
   react-native-web@0.19.13(encoding@0.1.13)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
